@@ -16,4 +16,14 @@
 품명 : apple                            <---compute()에서 처리
 금액 : 12000원
 '''
-#--------------------------------------------------------
+
+
+def compute(item, qty, price):
+    print(f"품명: {item}")
+    print(f"금액 : {qty * price}원")
+
+
+i = input("품명을 입력하시오 : ")
+q = int(input("수량을 입력하시오 : "))
+p = int(input("단가를 입력하시오 : "))
+compute(item=i, qty=q, price=p)
