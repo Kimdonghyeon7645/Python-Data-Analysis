@@ -6,6 +6,8 @@
 [출력 화면]
 Pythn s pwrfl... nd fst; plys wll wth thrs; rns vrywhr; s frndly & sy t lrn; s Opn.
 '''
-#--------------------------------------------------------------
-data_str = 'Python is powerful... and fast; plays well with others; runs everywhere; is friendly & easy to learn; is Open.'
+
+data_str = \
+    'Python is powerful... and fast; plays well with others; runs everywhere; is friendly & easy to learn; is Open.'
 serch = 'aeiou'
+print(''.join([i for i in data_str if i not in serch]))
