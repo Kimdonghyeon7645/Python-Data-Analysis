@@ -17,4 +17,12 @@
 
 [2,4,6,8,10,12,14,16,18]
 '''
-#-------------------------------------------------------
+
+with open('gugudan.txt', 'w') as f:
+    f.writelines([f'{i} * {j} = {i*j:>2}\n' for i in range(2, 10) for j in range(1, 10)])
+with open('gugudan.txt', 'r') as f:
+    answer = []
+    for sig in f.readlines():
+        print(sig.lstrip(), end='')
+        answer.append(sig.split()[-1])
+    print(answer)
