@@ -13,6 +13,13 @@ a==>3
 g==>1
 m==>1
 '''
-#------------------------------------------------
-t_str = input("문자열을 입력하시오: ")
 
+t_str = input("문자열을 입력하시오: ")
+dictionary = dict()
+for i in t_str:
+    if i in dictionary.keys():
+        dictionary[i] += 1
+    else:
+        dictionary.update({i: 1})
+print(dictionary)
+print(*[f'\n{k}==>{v}' for k, v in dictionary.items()])
