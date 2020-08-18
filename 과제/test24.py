@@ -6,5 +6,7 @@ country = ["Korea", "japan", "CHINA", "america"]
 ['CHINA', 'Korea', 'america', 'japan'] ==>대소문자 구별하여 오름차순 정렬
 ['america', 'CHINA', 'japan', 'Korea'] ==>대소문자 구별하지 않고 정렬
 """
-#----------------------------------------------------------
+
 country = ["Korea", "japan", "CHINA", "america"]
+print(list(sorted(country)), '==> 대소문자 구별하여 오름차순 정렬')
+print(list(sorted(country, key=lambda x: x[0].lower())), '==> 대소문자 구별하지 않고 정렬')

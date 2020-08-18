@@ -7,10 +7,12 @@
 [출력화면]
 인원수 : 3명    총합: 220   평균: 73.33
 '''
-#-------------------------------------------------
-def toString(t):
 
 
-re=toString((95,55,70))
-print("인원수: {0:d}명  총합: {1:d}  평균: {2:.2f}".format())
+def toString(t) -> tuple:
+    return len(t), sum(t), sum(t)/len(t)
+
+
+re = toString((95, 55, 70))
+print("인원수: {0:d}명  총합: {1:d}  평균: {2:.2f}".format(*re))
 
