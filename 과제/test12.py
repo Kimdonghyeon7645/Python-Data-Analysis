@@ -24,12 +24,13 @@
 학점=A
 평가=excellent
 '''
-#---------------------------------------------------------
-# mid=0       #중간고사
-# fin=0       #기말고사
-# rep=0       #레포트
-# att=0       #출석
-# avg=0.0     #성적
-# grade='\0'  #학점
-# result='\0' #평가
 
+mid = int(input("중간고사를 입력하시오: "))       # 중간고사
+fin = int(input("기말고사를 입력하시오: "))       # 기말고사
+rep = int(input("과제점수를 입력하시오: "))       # 레포트
+att = int(input("출석점수를 입력하시오: "))       # 출석
+avg = (mid + fin) / 2 * (60/100) + rep * (20/100) + att * (20/100)                  # 성적
+print(-1 if avg//10 < 6 else 10-avg//10)
+grade = ['A', 'A', 'B', 'C', 'D', 'E'][-1 if avg//10 < 6 else 10-int(avg//10)]      # 학점
+result = 'excellent' if grade in 'AB' else ('good' if grade in 'CD' else 'foor')    # 평가
+print(f'성적={avg:.4}\n학점={grade}\n평가={result}')
