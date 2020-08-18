@@ -85,12 +85,10 @@ print(vector[idx])  # 된다!!
 [[1,2,3]               [[1,2,3,10]
 [4,5,6]]      ==>      [4,5,6,20]]
 """
-vector = np.arange(1, 7).reshape(2, 3)
-vector.resize((2, 4))
+vector = np.array([[1, 2, 3], [4, 5, 6]])
 print(vector)
-for i in range(len(vector)):
-    vector[i] = np.append(vector[i], 10*(i+1))
-print(vector.reshape(2, 4))
+plus_array = np.array([*[[i*10] for i in range(1, len(vector)+1)]]) # [[10] [20]]
+print(np.append(vector, plus_array, axis=1))
 
 
 """ 8. 
@@ -110,4 +108,9 @@ print(vector.reshape(2, 4))
 [ 21  57  93 129 165]
 [13. 14. 15. 16. 17. 18.]
 """
+hang = np.arange(1, 31).reshape(5, 6)
+print(hang)
+print(hang.max())
+print(np.array([hang[i, :].sum() for i in range(len(hang))]))   # [n,:] n행의 모든 원소 슬라이싱
+print(np.array([hang[:, i].mean() for i in range(len(hang))]))  # [:,n] n열의 모든 원소 슬라이싱
 
