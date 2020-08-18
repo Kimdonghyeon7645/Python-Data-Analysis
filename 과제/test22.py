@@ -9,9 +9,16 @@
 [80, 70, 60, 50, 30]
 []
 """
-#-----------------------------------------------
-list=[10,20,30]
 
-
-
+lit = [10, 20, 30]
+print(lit)
+lit += [70, 80]
+print(lit)
+lit = lit[:3] + [40, 50, 60] + lit[3:]
+print(lit)
+lit.remove(40)
+lit = list(sorted(lit, reverse=True))
+print(lit)
+lit = lit[:-2]
+print(lit)
 
