@@ -1,4 +1,3 @@
-#-*- coding: utf-8 -*-
 """
 [문제9]2개의 숫자와 연산자를 입력하여 계산
 하시오 (if문이용)
@@ -21,25 +20,20 @@ B값을 입력하시오: 36
 연산자를 입력(+,-,*,/) : #
 연산자 에러
 """
-#----------------------------------------------------
 A = int(input("A값을 입력하시오: "))
 B = int(input("B값을 입력하시오: "))
 op = input("연산자를 입력(+,-,*,/) :")
 
 if op == '+':
-    result = A+B
-    print("%d %c %d = %d" % (A, op, B, result))
+    print("%d %c %d = %d" % (A, op, B, A+B))
 elif op == '-':
-    result = A - B
-    print("%d %c %d = %d" % (A, op, B, result))
+    print("%d %c %d = %d" % (A, op, B, A-B))
 elif op == '*':
-    result = A * B
-    print("%d %c %d = %d" % (A, op, B, result))
+    print("%d %c %d = %d" % (A, op, B, A*B))
 elif op == '/':
-    result = A / B
-    if(A/B-int(A/B)>0):
-        print("%d %c %d = %.2f" % (A, op, B, result))
+    if A/B - int(A/B) > 0:  # 실수(소수점 아래 자릿수가 있는) 경우
+        print("%d %c %d = %.2f" % (A, op, B, A/B))
     else:
-        print("%d %c %d = %d" % (A, op, B, result))
+        print("%d %c %d = %d" % (A, op, B, A/B))
 else:
     print("연산자 에러")
