@@ -11,7 +11,7 @@ import numpy as np
 4    6
 dtype: int64
 """
-print(pd.Series([8, 7, 3, 1, 6]))
+print(pd.Series(np.random.randint(1, 10, 5)))
 
 
 """ 2. 
