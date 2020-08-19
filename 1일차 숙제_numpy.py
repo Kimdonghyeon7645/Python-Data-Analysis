@@ -74,9 +74,10 @@ print(matrix[3][2])
 """
 vector = np.array(range(-1, -6, -1))
 idx = [False, True, False, True, False]
-print(*[n for i, n in enumerate(vector) if idx[i]])
-print(*[a for a, b in zip(vector, idx) if b])
-print(vector[idx])  # 된다!!
+
+print(*[n for i, n in enumerate(vector) if idx[i]])     # 방법1
+print(*[a for a, b in zip(vector, idx) if b])           # 방법2
+print(vector[idx])      # 방법3
 
 
 """ 7. 
@@ -87,8 +88,12 @@ print(vector[idx])  # 된다!!
 """
 vector = np.array([[1, 2, 3], [4, 5, 6]])
 print(vector)
-plus_array = np.array([*[[i*10] for i in range(1, len(vector)+1)]]) # [[10] [20]]
-print(np.append(vector, plus_array, axis=1))
+plus_array = np.array([*[[i*10] for i in range(1, len(vector)+1)]])     # [[10] [20]]
+# plus_array = np.array([[[10], [20]])      # 이와 같음
+
+print(np.append(vector, plus_array, axis=1))    # 방법1(append 사용)
+print(np.concatenate((vector, np.array([[10], [20]])), axis=1))     # 방법2-1(concatenate 사용)
+print(np.concatenate((vector, np.array([[10, 20]]).T), axis=1))     # 방법2-2(concatenate 와 .T 사용)
 
 
 """ 8. 
