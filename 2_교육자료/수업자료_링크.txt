@@ -12,3 +12,12 @@
 
 5. step05_pandas
     https://nbviewer.jupyter.org/gist/jenni7/49732691e40eb3dbb9298db489fb9fc1
+
+6. step06_Matplotlib
+    https://nbviewer.jupyter.org/gist/jenni7/2144d4d42ceec818b463bf3d0a7d241d
+
+7. step07_Plotly
+    https://nbviewer.jupyter.org/gist/jenni7/e521e5ee4600e1766824b8c08c7f1d95
+
+8. step08_이미지 분석
+    https://nbviewer.jupyter.org/gist/jenni7/7b259f6271bba95bb0017fb741291f06
