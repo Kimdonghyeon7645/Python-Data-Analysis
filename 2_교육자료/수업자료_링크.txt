@@ -21,3 +21,15 @@
 
 8. step08_이미지 분석
     https://nbviewer.jupyter.org/gist/jenni7/7b259f6271bba95bb0017fb741291f06
+
+9. step09_crawlings
+    https://nbviewer.jupyter.org/gist/jenni7/1fe570e4a2eade2ccb54e4ca6c18e6f2
+
+10. step10_Naver_Weather(네이버 날씨정보 가져오기)
+    https://nbviewer.jupyter.org/gist/jenni7/6719c742280c4d86e7e279063a9c5c04
+
+11. step11_crawling
+    https://nbviewer.jupyter.org/gist/jenni7/5c90c7db31bc82f4886615cfa06915dd
+
+12. step12_crawling(주식 정보얻기)
+   https://nbviewer.jupyter.org/gist/jenni7/fb0de80de80ea005159c31ea3f2d452e
