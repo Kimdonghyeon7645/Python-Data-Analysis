@@ -33,3 +33,9 @@
 
 12. step12_crawling(주식 정보얻기)
    https://nbviewer.jupyter.org/gist/jenni7/fb0de80de80ea005159c31ea3f2d452e
+
+13. step14_wordcloud(워드클라우드)
+     https://nbviewer.jupyter.org/gist/jenni7/a8efa5a3e028e6d1814436e2c60a1447
+
+14. step15_textmining(텍스트마이닝)
+     https://nbviewer.jupyter.org/gist/jenni7/7f179294f66f8353d01a88d9d304be32
